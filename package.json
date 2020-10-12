@@ -1,0 +1,17 @@
+{
+  "name": "bank-ocr-kata-challenge",
+  "version": "1.0.0",
+  "description": "TD's Take Home Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.5.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "line-reader": "^0.4.0"
+  }
+}
