@@ -67,10 +67,3 @@ process("account-entries-use-case-1.txt");
 
 exports.processRawAccountEntry = processRawAccountEntry;
 exports.isValidChecksum = isValidChecksum;
-
-// should have opened file and read line by line instead of loading all into memory
-// wasted too much time trying to find a way to do a multiline JSON object to use key/value pairs; could have done it with ' _ | ||_|': 0,
-//   but wanted to follow the "clue" and make the digits readable
-// my goal was to at least hit the checksum use case 2 so after seeing I was "behind schedule"
-// ideally would make the quick change to use CLI to pick which file to read, ie. "node index.js account-test-123456789.txt" so will do that after
-// ran into issue where my editor trimmed trailing whitespace on the account entries file, for example if it ended in 9, the last char of the top line would be a " " which got trimmed when I saved, leading to undefined when trying to read it. Should improve that to make it more robust.
