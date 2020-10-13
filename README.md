@@ -1,6 +1,6 @@
 # bank-ocr-kata-challenge
 
-Took on the challenge to try this coding kata and see how much I could get done in **3 hours**. However, I did read the challenge a couple days before I started coding and did do some mental preliminary designing! Even then, once I started the clock and wrote my first functions, I had to come back to refactor how I originally planned it.
+Took on the challenge to try this bank OCR coding kata (original description: [http://codingdojo.org/kata/BankOCR](http://codingdojo.org/kata/BankOCR/)) and see how much I could get done in **3 hours**. However, I did read the challenge a couple days before I started coding and did do some mental preliminary designing! Even then, once I started the clock and wrote my first functions, I had to come back to refactor how I originally planned it.
 
 My high level notes I wrote were:
 
@@ -17,7 +17,7 @@ With the 3 hour limit, my goal was to fully get through User Story 3 and spend a
 ## Screen Recording of Results
 ![Recording of Results](bank-ocr-kata-recording.gif)
 
-## Things I Wish I Did / How I would Improve It
+## Things I Wish I Did / How I Would Improve It
 
 * Would have liked to have used the CLI to choose the file instead of hard coding, ie. `node index.js account-entries-use-case-1.txt`
 * The kata stated `A normal file contains around 500 entries`. With the current way it's written, it loads the entire file into memory. I should have written it so that the file streams in 4 lines at a time versus bringing in the entire thing. Similarly, my `parseAccountEntriesFile` loads each line into an array, meaning if a 500 entry file is processed, I'd end up with a 2000 element array. Not so good!
